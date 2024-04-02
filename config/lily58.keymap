@@ -23,11 +23,11 @@
 
             display-name = "Base";
             bindings = <
-&kp LS(TAB)    &kp Q    &kp W      &kp E      &kp R     &kp T                                                  &kp Y          &kp U         &kp I      &kp O       &kp P      &kp MINUS
-&kp TAB        &kp A    &kp S      &kp D      &kp F     &kp G                                                  &kp H          &kp J         &kp K      &kp L       &kp SEMI   &kp APOS
-&kt RALT       &kp Z    &kp X      &kp C      &kp V     &kp B                                                  &kp N          &kp M         &kp COMMA  &kp PERIOD  &kp SLASH  &kp BSLH
-&kp C_AC_HOME  &kp DEL  &kp PG_UP  &kp PG_DN  &kp LBKT  &kp RBKT          &mo 1             &kp RIGHT_CONTROL  &kp GRAVE      &kp LEFT      &kp UP     &kp DOWN    &kp RIGHT  &kp EQUAL
-                                   &kp ESC    &kp LALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT    &kp SPACE          &kp BACKSPACE  &kp LEFT_GUI  &kp ENTER
+&kp LS(TAB)    &kp Q    &kp W                 &kp E                  &kp R     &kp T                                                  &kp Y          &kp U         &kp I      &kp O       &kp P      &kp MINUS
+&kp TAB        &kp A    &kp S                 &kp D                  &kp F     &kp G                                                  &kp H          &kp J         &kp K      &kp L       &kp SEMI   &kp APOS
+&kt RALT       &kp Z    &kp X                 &kp C                  &kp V     &kp B                                                  &kp N          &kp M         &kp COMMA  &kp PERIOD  &kp SLASH  &kp BSLH
+&kp C_AC_HOME  &kp DEL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LBKT  &kp RBKT          &mo 1             &kp RIGHT_CONTROL  &kp GRAVE      &kp LEFT      &kp UP     &kp DOWN    &kp RIGHT  &kp EQUAL
+                                              &kp ESC                &kp LALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT    &kp SPACE          &kp BACKSPACE  &kp LEFT_GUI  &kp ENTER
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
