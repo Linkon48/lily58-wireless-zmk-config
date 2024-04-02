@@ -29,8 +29,6 @@
 &mkp MB4  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &mkp MB5          &mo 1             &kp RIGHT_CONTROL  &kp GRAVE      &kp LEFT      &kp UP     &kp DOWN    &kp RIGHT  &kp EQUAL
                                                &kp ESC               &kp LALT               &kp LEFT_CONTROL  &kp LEFT_SHIFT    &kp SPACE          &kp BACKSPACE  &kp LEFT_GUI  &kp ENTER
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         raise_layer {
