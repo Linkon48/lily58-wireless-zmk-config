@@ -23,10 +23,10 @@
 
             display-name = "Base";
             bindings = <
-&kp HOME   &kp Q       &kp W    &kp E       &kp R          &kp T                                                  &kp Y          &kp U     &kp I      &kp O       &kp P         &kp K_PWR
-&kp TAB    &kp A       &kp S    &kp D       &kp F          &kp G                                                  &kp H          &kp J     &kp K      &kp L       &kp SEMI      &kp APOS
-&kt RALT   &kp Z       &kp X    &kp C       &kp V          &kp B                                                  &kp N          &kp M     &kp COMMA  &kp PERIOD  &kp C_REPEAT  &kp K_SLEEP
-&kp K_CUT  &kp K_COPY  &kp INS  &kp DELETE  &kp K_FORWARD  &kp K_BACK        &kp LALT          &kp RIGHT_CONTROL  &kp GRAVE      &kp LEFT  &kp UP     &kp DOWN    &kp RIGHT     &kp K_LOCK
+&kp HOME   &kp Q       &kp W    &kp E       &kp R          &kp T                                                  &kp Y          &kp U     &kp I      &kp O       &kp P      &kp K_PWR
+&kp TAB    &kp A       &kp S    &kp D       &kp F          &kp G                                                  &kp H          &kp J     &kp K      &kp L       &kp SEMI   &kp APOS
+&kt RALT   &kp Z       &kp X    &kp C       &kp V          &kp B                                                  &kp N          &kp M     &kp COMMA  &kp PERIOD  &kp SLASH  &kp K_SLEEP
+&kp K_CUT  &kp K_COPY  &kp INS  &kp DELETE  &kp K_FORWARD  &kp C_REPEAT      &kp LALT          &kp RIGHT_CONTROL  &kp GRAVE      &kp LEFT  &kp UP     &kp DOWN    &kp RIGHT  &kp K_LOCK
                                 &kp ESC     &kp LEFT_GUI   &kp LEFT_CONTROL  &kp LEFT_SHIFT    &kp SPACE          &kp BACKSPACE  &mo 1     &kp ENTER
             >;
         };
@@ -41,11 +41,11 @@
 
             display-name = "Raise";
             bindings = <
-&kp F12  &kp F1            &kp F2            &kp F3                &kp F4                 &kp F5                                          &kp F6           &kp F7     &kp F8     &kp F9     &kp F10    &kp F11
-&kp TAB  &kp N1            &kp N2            &kp N3                &kp N4                 &kp N5                                          &kp N6           &kp N7     &kp N8     &kp N9     &kp N0     &kp CAPS
-&trans   &kp LEFT_BRACKET  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH                                   &kp NON_US_HASH  &kp MINUS  &kp EQUAL  &kp SLASH  &kp STAR   &bt BT_SEL 0
-&trans   &trans            &trans            &trans                &trans                 &trans            &kp LALT          &bt BT_CLR  &trans           &kp LEFT   &kp UP     &kp DOWN   &kp RIGHT  &bt BT_SEL 1
-                                             &kp ESC               &kp LEFT_GUI           &kp LEFT_CONTROL  &kp LEFT_SHIFT    &kp SPACE   &kp BACKSPACE    &trans     &kp ENTER
+&kp F12  &kp F1            &kp F2            &kp F3                &kp F4                 &kp F5                                          &kp F6         &kp F7     &kp F8     &kp F9           &kp F10    &kp F11
+&kp TAB  &kp N1            &kp N2            &kp N3                &kp N4                 &kp N5                                          &kp N6         &kp N7     &kp N8     &kp N9           &kp N0     &kp CAPS
+&trans   &kp LEFT_BRACKET  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH                                   &trans         &kp MINUS  &kp EQUAL  &kp NON_US_HASH  &kp STAR   &bt BT_SEL 0
+&trans   &trans            &trans            &trans                &trans                 &trans            &kp LALT          &bt BT_CLR  &trans         &kp LEFT   &kp UP     &kp DOWN         &kp RIGHT  &bt BT_SEL 1
+                                             &kp ESC               &kp LEFT_GUI           &kp LEFT_CONTROL  &kp LEFT_SHIFT    &kp SPACE   &kp BACKSPACE  &trans     &kp ENTER
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
