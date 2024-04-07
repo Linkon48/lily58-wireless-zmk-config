@@ -23,11 +23,11 @@
 
             display-name = "Base";
             bindings = <
-&kp HOME   &kp Q       &kp W    &kp E       &kp R          &kp T                                                  &kp Y          &kp U     &kp I      &kp O       &kp P      &kp K_PWR
-&kp TAB    &kp A       &kp S    &kp D       &kp F          &kp G                                                  &kp H          &kp J     &kp K      &kp L       &kp SEMI   &kp APOS
-&kt RALT   &kp Z       &kp X    &kp C       &kp V          &kp B                                                  &kp N          &kp M     &kp COMMA  &kp PERIOD  &kp SLASH  &kp K_SLEEP
-&kp K_CUT  &kp K_COPY  &kp INS  &kp DELETE  &kp K_FORWARD  &kp C_REPEAT      &kp LALT          &kp RIGHT_CONTROL  &kp GRAVE      &kp LEFT  &kp UP     &kp DOWN    &kp RIGHT  &kp K_LOCK
-                                &kp ESC     &kp LEFT_GUI   &kp LEFT_CONTROL  &kp LEFT_SHIFT    &kp SPACE          &kp BACKSPACE  &mo 1     &kp ENTER
+&kp HOME   &kp Q       &kp W        &kp E       &kp R          &kp T                                                  &kp Y          &kp U     &kp I      &kp O       &kp P      &kp K_PWR
+&kp TAB    &kp A       &kp S        &kp D       &kp F          &kp G                                                  &kp H          &kp J     &kp K      &kp L       &kp SEMI   &kp APOS
+&kt RALT   &kp Z       &kp X        &kp C       &kp V          &kp B                                                  &kp N          &kp M     &kp COMMA  &kp PERIOD  &kp SLASH  &kp K_SLEEP
+&kp K_CUT  &kp K_COPY  &kp K_PASTE  &kp DELETE  &kp K_FORWARD  &key_repeat       &kp LALT          &kp RIGHT_CONTROL  &kp GRAVE      &kp LEFT  &kp UP     &kp DOWN    &kp RIGHT  &kp K_LOCK
+                                    &kp ESC     &kp LEFT_GUI   &kp LEFT_CONTROL  &kp LEFT_SHIFT    &kp SPACE          &kp BACKSPACE  &mo 1     &kp ENTER
             >;
         };
 
