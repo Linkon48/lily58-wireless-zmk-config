@@ -23,11 +23,11 @@
 
             display-name = "Base";
             bindings = <
-&kp HOME      &kp Q            &kp W            &kp D            &kp F            &kp K                                              &kp J          &kp U     &kp R      &kp L       &kp SEMICOLON  &kp K_PWR
-&kp TAB       &kp A            &kp S            &kp E            &kp T            &kp G                                              &kp Y          &kp N     &kp I      &kp O       &kp H          &kp APOS
-&kt C_VOL_UP  &kp Z            &kp X            &kp C            &kp V            &kp B                                              &kp P          &kp M     &kp COMMA  &kp PERIOD  &kp SLASH      &kp C_BRI_UP
-&kp C_VOL_DN  &kp KP_NUMBER_4  &kp KP_NUMBER_2  &kp KP_NUMBER_8  &kp KP_NUMBER_6  &kp LEFT_GUI  &kp LALT          &kp RIGHT_CONTROL  &kp GRAVE      &kp LEFT  &kp UP     &kp DOWN    &kp RIGHT      &kp C_BRI_DEC
-                                                &kp ESC          &kp LCTRL        &key_repeat   &kp LEFT_SHIFT    &kp SPACE          &kp BACKSPACE  &mo 1     &kp ENTER
+&kp HOME      &kp Q      &kp W      &kp D      &kp F      &kp K                                              &kp J          &kp U     &kp R      &kp L       &kp SEMICOLON  &kp K_PWR
+&kp TAB       &kp A      &kp S      &kp E      &kp T      &kp G                                              &kp Y          &kp N     &kp I      &kp O       &kp H          &kp APOS
+&kt C_VOL_UP  &kp Z      &kp X      &kp C      &kp V      &kp B                                              &kp P          &kp M     &kp COMMA  &kp PERIOD  &kp SLASH      &kp C_BRI_UP
+&kp C_VOL_DN  &kp KP_N4  &kp KP_N2  &kp KP_N8  &kp KP_N6  &kp LEFT_GUI  &kp LALT          &kp RIGHT_CONTROL  &kp GRAVE      &kp LEFT  &kp UP     &kp DOWN    &kp RIGHT      &kp C_BRI_DEC
+                                    &kp ESC    &kp LCTRL  &key_repeat   &kp LEFT_SHIFT    &kp SPACE          &kp BACKSPACE  &mo 1     &kp ENTER
             >;
         };
 
