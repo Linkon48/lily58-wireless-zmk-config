@@ -6,6 +6,7 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
@@ -40,11 +41,11 @@
 
             display-name = "Raise";
             bindings = <
-&trans   &kp F1            &kp F2             &kp F3                &kp F4                 &kp F5                                    &kp F6         &kp F7               &kp F8     &kp F9    &kp F10    &trans
-&kp F12  &kp N1            &kp N2             &kp N3                &kp N4                 &kp N5                                    &kp N6         &kp N7               &kp N8     &kp N9    &kp N0     &kp F11
-&trans   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH                             &kp DOLLAR     &kp MINUS            &kp EQUAL  &kp HASH  &kp STAR   &trans
-&trans   &trans            &trans             &trans                &trans                 &trans          &trans         &trans     &trans         &kp LEFT             &kp UP     &kp DOWN  &kp RIGHT  &trans
-                                              &bt BT_NXT            &mt LCTRL ESC          &kp LEFT_SHIFT  &key_repeat    &kp SPACE  &kp BACKSPACE  &mt RIGHT_GUI ENTER  &trans
+&trans   &kp F1             &kp F2      &kp F3            &kp F4             &kp F5                                    &kp F6         &kp F7               &kp F8     &kp F9      &kp F10     &trans
+&kp F12  &kp N1             &kp N2      &kp N3            &kp N4             &kp N5                                    &kp N6         &kp N7               &kp N8     &kp N9      &kp N0      &kp F11
+&trans   &ext_power EP_TOG  &bt BT_CLR  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans                                    &bt BT_CLR     &kp MINUS            &kp EQUAL  &bt BT_NXT  &bt BT_PRV  &trans
+&trans   &trans             &trans      &trans            &trans             &trans          &trans         &trans     &trans         &kp LEFT             &kp UP     &kp DOWN    &kp RIGHT   &trans
+                                        &kp RCTRL         &mt LCTRL ESC      &kp LEFT_SHIFT  &key_repeat    &kp SPACE  &kp BACKSPACE  &mt RIGHT_GUI ENTER  &trans
             >;
         };
     };
