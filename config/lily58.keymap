@@ -5,7 +5,6 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
@@ -21,23 +20,31 @@
         combo_b {
             bindings = <&kp B>;
             key-positions = <53 28>;
+            layers = <0>;
         };
 
         combo_p {
             bindings = <&kp P>;
             key-positions = <54 31>;
+            layers = <0>;
         };
 
         combo_j {
             bindings = <&kp J>;
             key-positions = <7 54>;
+            layers = <0>;
+        };
+
+        combo_rtctrl {
+            bindings = <&kp RCTRL>;
+            key-positions = <23 12>;
         };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        BASE {
             // ------------------------------------------------------------------------------------------------------------
             // |  ESC  |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |   `   |
             // |  TAB  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   |   -   |
@@ -47,15 +54,15 @@
 
             display-name = "Base";
             bindings = <
-&trans   &kp Q   &kp W   &kp D     &kp F          &kp K                                     &kp J          &kp U              &kp R        &kp L       &kp SEMICOLON  &trans
-&kp TAB  &kp A   &kp S   &kp E     &kp T          &kp G                                     &kp Y          &kp N              &kp I        &kp O       &kp H          &kp APOS
-&trans   &kp Z   &kp X   &kp C     &kp V          &kp B                                     &kp P          &kp M              &kp COMMA    &kp PERIOD  &kp SLASH      &trans
-&trans   &trans  &trans  &trans    &trans         &trans          &trans         &trans     &trans         &kp LEFT           &kp UP       &kp DOWN    &kp RIGHT      &trans
-                         &kp LALT  &mt LCTRL ESC  &sk LEFT_SHIFT  &key_repeat    &kp SPACE  &kp BACKSPACE  &mt RIGHT_GUI DEL  &lt 1 ENTER
+&trans   &kp Q   &kp W   &kp D   &kp F          &trans                                      &trans           &kp U              &kp R           &kp L       &kp SEMICOLON  &trans
+&kp TAB  &kp A   &kp S   &kp E   &kp T          &kp G                                       &kp Y            &kp N              &kp I           &kp O       &kp H          &kp APOS
+&trans   &kp Z   &kp X   &kp C   &kp V          &trans                                      &trans           &kp M              &kp COMMA       &kp PERIOD  &kp SLASH      &trans
+&trans   &trans  &trans  &trans  &trans         &trans          &trans         &trans       &trans           &trans             &trans          &trans      &trans         &trans
+                         &trans  &mt LCTRL ESC  &sk LEFT_SHIFT  &key_repeat    &lt 1 SPACE  &lt 2 BACKSPACE  &mt RIGHT_GUI DEL  &mt RALT ENTER
             >;
         };
 
-        raise_layer {
+        NUM {
             // ------------------------------------------------------------------------------------------------------------
             // |       |     |     |      |      |      |                   |      |       |       |      |       |       |
             // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |   7   |   8   |  9   |   0   |       |
@@ -63,14 +70,43 @@
             // |   F7  |  F8 |  F9 |  F10 |  F11 |  F12 |        |  |       |  +   |   -   |   =   |  [   |   ]   |   \   |
             //                     |      |      |      |        |  |       |      |       |       |
 
-            display-name = "Raise";
+            display-name = "...";
             bindings = <
-&trans   &kp F1          &kp F2     &kp F3            &kp F4             &kp F5                                    &kp F6         &kp F7             &kp F8     &kp F9      &kp F10     &trans
-&kp F12  &kp N1          &kp N2     &kp N3            &kp N4             &kp N5                                    &kp N6         &kp N7             &kp N8     &kp N9      &kp N0      &kp F11
-&trans   &bt BT_CLR_ALL  &kp GRAVE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans                                    &trans         &kp MINUS          &kp EQUAL  &bt BT_NXT  &bt BT_PRV  &trans
-&trans   &trans          &trans     &trans            &trans             &trans          &trans         &trans     &trans         &kp LEFT           &kp UP     &kp DOWN    &kp RIGHT   &trans
-                                    &kp RCTRL         &mt LCTRL ESC      &sk LEFT_SHIFT  &key_repeat    &kp SPACE  &kp BACKSPACE  &mt RIGHT_GUI DEL  &trans
+&trans  &trans  &kp N1  &kp N2  &kp N3         &trans                                   &trans      &trans             &trans     &trans                &trans                 &trans
+&trans  &trans  &kp N4  &kp N5  &kp N6         &kp N0                                   &kp DOLLAR  &kp MINUS          &kp EQUAL  &kp HASH              &kp ASTRK              &trans
+&trans  &trans  &kp N7  &kp N8  &kp N9         &trans                                   &trans      &kp LEFT_BRACKET   &kp RBKT   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans  &trans  &trans  &trans  &trans         &trans          &trans           &trans  &trans      &trans             &trans     &trans                &trans                 &trans
+                        &trans  &mt LCTRL ESC  &sk LEFT_SHIFT  &kp BACKSPACE    &trans  &trans      &mt RIGHT_GUI DEL  &trans
             >;
+        };
+
+        FUNC {
+            bindings = <
+&trans  &kp F11  &kp F1  &kp F2  &kp F3         &trans                             &trans  &trans    &trans  &trans    &trans     &trans
+&trans  &kp F12  &kp F4  &kp F5  &kp F6         &kp F10                            &trans  &kp LEFT  &kp UP  &kp DOWN  &kp RIGHT  &trans
+&trans  &trans   &kp F7  &kp F8  &kp F9         &trans                             &trans  &trans    &trans  &trans    &trans     &trans
+&trans  &trans   &trans  &trans  &trans         &trans    &trans           &trans  &trans  &trans    &trans  &trans    &trans     &trans
+                         &trans  &mt LCTRL ESC  &kp LALT  &kp BACKSPACE    &trans  &trans  &trans    &trans
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+            >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        double-thumb {
+            if-layers = <0 2>;
+            then-layer = <3>;
         };
     };
 };
