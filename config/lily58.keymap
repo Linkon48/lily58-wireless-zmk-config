@@ -15,21 +15,26 @@
         K-ombo {
             bindings = <&kp K>;
             key-positions = <16 27>;
+            layers = <0>;
         };
 
         B-ombo {
             bindings = <&kp B>;
             key-positions = <3 16>;
+            timeout-ms = <0>;
+            layers = <0>;
         };
 
         J-ombo {
             bindings = <&kp J>;
             key-positions = <19 8>;
+            layers = <0>;
         };
 
         P-ombo {
             bindings = <&kp P>;
             key-positions = <19 32>;
+            layers = <0>;
         };
     };
 
