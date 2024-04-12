@@ -11,33 +11,32 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_k {
-            bindings = <&kp K>;
-            key-positions = <53 4>;
-            layers = <0>;
-        };
-
-        combo_b {
-            bindings = <&kp B>;
-            key-positions = <53 28>;
-            layers = <0>;
-        };
-
-        combo_p {
-            bindings = <&kp P>;
-            key-positions = <54 31>;
-            layers = <0>;
-        };
-
-        combo_j {
-            bindings = <&kp J>;
-            key-positions = <7 54>;
-            layers = <0>;
-        };
-
         combo_rtctrl {
             bindings = <&kp RCTRL>;
             key-positions = <23 12>;
+        };
+
+        combo-k {
+            bindings = <&kp K>;
+            key-positions = <4 3>;
+            layers = <0>;
+        };
+
+        combo-b {
+            bindings = <&kp B>;
+            key-positions = <28 27>;
+            layers = <0>;
+        };
+
+        combo-j {
+            bindings = <&kp J>;
+            key-positions = <7 8>;
+            layers = <0>;
+        };
+
+        combo-p {
+            bindings = <&kp P>;
+            key-positions = <31 32>;
         };
     };
 
