@@ -16,27 +16,27 @@
             key-positions = <23 12>;
         };
 
-        combo-k {
+        k {
             bindings = <&kp K>;
-            key-positions = <4 3>;
+            key-positions = <3 2>;
             layers = <0>;
         };
 
-        combo-b {
+        b {
             bindings = <&kp B>;
-            key-positions = <28 27>;
+            key-positions = <27 26>;
             layers = <0>;
         };
 
-        combo-j {
-            bindings = <&kp J>;
-            key-positions = <7 8>;
-            layers = <0>;
-        };
-
-        combo-p {
+        p {
             bindings = <&kp P>;
-            key-positions = <31 32>;
+            key-positions = <32 33>;
+        };
+
+        j {
+            bindings = <&kp J>;
+            key-positions = <8 9>;
+            layers = <0>;
         };
     };
 
