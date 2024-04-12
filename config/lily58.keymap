@@ -9,6 +9,30 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        K-ombo {
+            bindings = <&kp K>;
+            key-positions = <16 27>;
+        };
+
+        B-ombo {
+            bindings = <&kp B>;
+            key-positions = <3 16>;
+        };
+
+        J-ombo {
+            bindings = <&kp J>;
+            key-positions = <19 8>;
+        };
+
+        P-ombo {
+            bindings = <&kp P>;
+            key-positions = <19 32>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
