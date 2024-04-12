@@ -12,29 +12,25 @@
     combos {
         compatible = "zmk,combos";
 
-        K-ombo {
+        combo_k {
             bindings = <&kp K>;
-            key-positions = <16 27>;
+            key-positions = <53 4>;
             layers = <0>;
         };
 
-        B-ombo {
+        combo_b {
             bindings = <&kp B>;
-            key-positions = <3 16>;
-            timeout-ms = <0>;
-            layers = <0>;
+            key-positions = <53 28>;
         };
 
-        J-ombo {
-            bindings = <&kp J>;
-            key-positions = <19 8>;
-            layers = <0>;
-        };
-
-        P-ombo {
+        combo_p {
             bindings = <&kp P>;
-            key-positions = <19 32>;
-            layers = <0>;
+            key-positions = <54 31>;
+        };
+
+        combo_j {
+            bindings = <&kp J>;
+            key-positions = <7 54>;
         };
     };
 
