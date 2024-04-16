@@ -33,7 +33,7 @@
 &trans   &trans  &kp W   &kp D   &kp F          &kp K                                       &kp J            &kp U              &kp R           &kp L       &trans     &trans
 &trans   &kp Q   &kp S   &kp E   &kp T          &kp G                                       &kp Y            &kp N              &kp I           &kp O       &kp SEMI   &trans
 &kp TAB  &kp A   &kp X   &kp C   &kp V          &kp B                                       &kp P            &kp M              &kp COMMA       &kp PERIOD  &kp H      &kp APOS
-&trans   &kp Z   &trans  &trans  &trans         &trans          &trans         &trans       &trans           &trans             &trans          &trans      &kp SLASH  &trans
+&trans   &kp Z   &trans  &trans  &trans         &trans          &trans         &trans       &kp LEFT         &kp UP             &kp DOWN        &kp RIGHT   &kp SLASH  &trans
                          &trans  &mt LCTRL ESC  &sk LEFT_SHIFT  &key_repeat    &lt 1 SPACE  &lt 2 BACKSPACE  &mt RIGHT_GUI DEL  &mt RALT ENTER
             >;
         };
