@@ -15,29 +15,6 @@
             bindings = <&kp RCTRL>;
             key-positions = <23 12>;
         };
-
-        k {
-            bindings = <&kp K>;
-            key-positions = <3 2>;
-            layers = <0>;
-        };
-
-        b {
-            bindings = <&kp B>;
-            key-positions = <27 26>;
-            layers = <0>;
-        };
-
-        p {
-            bindings = <&kp P>;
-            key-positions = <32 33>;
-        };
-
-        j {
-            bindings = <&kp J>;
-            key-positions = <8 9>;
-            layers = <0>;
-        };
     };
 
     keymap {
@@ -53,10 +30,10 @@
 
             display-name = "Base";
             bindings = <
-&trans   &kp Q   &kp W   &kp D   &kp F          &trans                                      &trans           &kp U              &kp R           &kp L       &kp SEMICOLON  &trans
-&kp TAB  &kp A   &kp S   &kp E   &kp T          &kp G                                       &kp Y            &kp N              &kp I           &kp O       &kp H          &kp APOS
-&trans   &kp Z   &kp X   &kp C   &kp V          &trans                                      &trans           &kp M              &kp COMMA       &kp PERIOD  &kp SLASH      &trans
-&trans   &trans  &trans  &trans  &trans         &trans          &trans         &trans       &trans           &trans             &trans          &trans      &trans         &trans
+&trans   &trans  &kp W   &kp D   &kp F          &kp K                                       &kp J            &kp U              &kp R           &kp L       &trans     &trans
+&trans   &kp Q   &kp S   &kp E   &kp T          &kp G                                       &kp Y            &kp N              &kp I           &kp O       &kp SEMI   &trans
+&kp TAB  &kp A   &kp X   &kp C   &kp V          &kp B                                       &kp P            &kp M              &kp COMMA       &kp PERIOD  &kp H      &kp APOS
+&trans   &kp Z   &trans  &trans  &trans         &trans          &trans         &trans       &trans           &trans             &trans          &trans      &kp SLASH  &trans
                          &trans  &mt LCTRL ESC  &sk LEFT_SHIFT  &key_repeat    &lt 1 SPACE  &lt 2 BACKSPACE  &mt RIGHT_GUI DEL  &mt RALT ENTER
             >;
         };
