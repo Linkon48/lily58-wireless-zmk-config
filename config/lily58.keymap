@@ -11,9 +11,9 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_rtctrl {
+        comp {
             bindings = <&kp RCTRL>;
-            key-positions = <23 12>;
+            key-positions = <35 24>;
         };
     };
 
@@ -30,9 +30,9 @@
 
             display-name = "Base";
             bindings = <
-&trans   &kp N1  &kp N2  &kp N3  &kp N4         &kp N5                                      &kp N6           &kp N7             &kp N8          &kp N9   &kp N0     &kp MINUS
-&trans   &kp Q   &kp W   &kp D   &kp F          &kp K                                       &kp J            &kp U              &kp R           &kp L    &kp SEMI   &kp APOS
-&kp TAB  &kp A   &kp S   &kp E   &kp T          &kp G                                       &kp Y            &kp N              &kp I           &kp O    &kp H      &kp N
+&trans   &kp N1  &kp N2  &kp N3  &kp N4         &kp N5                                      &kp N6           &kp N7             &kp N8          &kp N9   &kp N0     &trans
+&trans   &kp Q   &kp W   &kp D   &kp F          &kp K                                       &kp J            &kp U              &kp R           &kp L    &kp SEMI   &kp MINUS
+&kp TAB  &kp A   &kp S   &kp E   &kp T          &kp G                                       &kp Y            &kp N              &kp I           &kp O    &kp H      &kp APOS
 &trans   &kp Z   &kp X   &kp C   &kp V          &kp B           &trans         &trans       &kp P            &kp M              &kp COMMA       &kp DOT  &kp SLASH  &kp EQUAL
                          &trans  &mt LCTRL ESC  &sk LEFT_SHIFT  &key_repeat    &lt 1 SPACE  &lt 2 BACKSPACE  &mt RIGHT_GUI DEL  &mt RALT ENTER
             >;
