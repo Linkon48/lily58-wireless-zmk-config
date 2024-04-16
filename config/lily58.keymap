@@ -30,11 +30,11 @@
 
             display-name = "Base";
             bindings = <
-&trans   &kp N1  &kp N2  &kp N3  &kp N4         &kp N5                                      &kp N6           &kp N7             &kp N8          &kp N9   &kp N0     &trans
-&trans   &kp Q   &kp W   &kp D   &kp F          &kp K                                       &kp J            &kp U              &kp R           &kp L    &kp SEMI   &kp MINUS
-&kp TAB  &kp A   &kp S   &kp E   &kp T          &kp G                                       &kp Y            &kp N              &kp I           &kp O    &kp H      &kp APOS
-&trans   &kp Z   &kp X   &kp C   &kp V          &kp B           &trans         &trans       &kp P            &kp M              &kp COMMA       &kp DOT  &kp SLASH  &kp EQUAL
-                         &trans  &mt LCTRL ESC  &sk LEFT_SHIFT  &key_repeat    &lt 1 SPACE  &lt 2 BACKSPACE  &mt RIGHT_GUI DEL  &mt RALT ENTER
+&trans   &kp N1  &kp N2  &kp N3       &kp N4     &kp N5                                                 &kp N6         &kp N7     &kp N8          &kp N9   &kp N0     &trans
+&trans   &kp Q   &kp W   &kp D        &kp F      &kp K                                                  &kp J          &kp U      &kp R           &kp L    &kp SEMI   &kp MINUS
+&kp TAB  &kp A   &kp S   &kp E        &kp T      &kp G                                                  &kp Y          &kp N      &kp I           &kp O    &kp H      &kp APOS
+&trans   &kp Z   &kp X   &kp C        &kp V      &kp B           &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp P          &kp M      &kp COMMA       &kp DOT  &kp SLASH  &kp EQUAL
+                         &mt DEL ESC  &sk LCTRL  &sk LEFT_SHIFT  &key_repeat         &lt 1 SPACE        &kp BACKSPACE  &lt 1 TAB  &mt RGUI ENTER
             >;
         };
 
@@ -48,31 +48,11 @@
 
             display-name = "...";
             bindings = <
-&trans  &trans  &trans  &trans  &trans         &trans                                   &trans      &trans             &trans     &trans                &trans                 &trans
-&trans  &trans  &kp N1  &kp N2  &kp N3         &kp N0                                   &trans      &trans             &trans     &trans                &trans                 &trans
-&trans  &trans  &kp N4  &kp N5  &kp N6         &kp N0                                   &kp DOLLAR  &kp MINUS          &kp EQUAL  &kp HASH              &kp ASTRK              &trans
-&trans  &trans  &kp N7  &kp N8  &kp N9         &trans          &trans           &trans  &trans      &kp LBKT           &kp RBKT   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-                        &trans  &mt LCTRL ESC  &sk LEFT_SHIFT  &kp BACKSPACE    &trans  &trans      &mt RIGHT_GUI DEL  &trans
-            >;
-        };
-
-        FUNC {
-            bindings = <
-&none  &none  &kp F1   &kp F2   &kp F3   &none                     &none   &none     &none   &none     &none      &none
-&none  &none  &kp F4   &kp F5   &kp F6   &none                     &none   &none     &none   &none     &none      &none
-&none  &none  &kp F7   &kp F8   &kp F9   &none                     &none   &kp LEFT  &kp UP  &kp DOWN  &kp RIGHT  &none
-&none  &none  &kp F10  &kp F11  &kp F12  &none   &none     &none   &none   &none     &none   &none     &none      &none
-                       &none    &trans   &trans  &trans    &trans  &trans  &trans    &trans
-            >;
-        };
-
-        layer_3 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+&none    &none   &none   &none   &none          &none                                    &none   &none     &none   &none     &none      &none
+&none    &kp F1  &kp F2  &kp F3  &kp F4         &kp F5                                   &kp F6  &kp F7    &kp F8  &kp F9    &kp F10    &trans
+&kp F11  &kp N1  &kp N2  &kp N3  &kp N4         &kp N5                                   &kp N6  &kp N7    &kp N8  &kp N9    &kp N0     &kp F12
+&none    &none   &none   &none   &none          &none           &trans           &trans  &none   &kp LEFT  &kp UP  &kp DOWN  &kp RIGHT  &trans
+                         &trans  &mt LCTRL ESC  &sk LEFT_SHIFT  &kp BACKSPACE    &trans  &trans  &trans    &trans
             >;
         };
     };
@@ -82,7 +62,7 @@
 
         double-thumb {
             if-layers = <0 2>;
-            then-layer = <3>;
+            then-layer = <2>;
         };
     };
 };
