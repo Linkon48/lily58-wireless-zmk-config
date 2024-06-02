@@ -31,11 +31,11 @@
 
             display-name = "Base";
             bindings = <
-&kp PAGE_UP    &kp N1  &kp N2  &kp N3        &kp N4     &kp N5                                                 &kp N6         &kp N7     &kp N8          &kp N9   &kp N0     &kp K_MUTE
-&kp PAGE_DOWN  &kp Q   &kp W   &kp D         &kp F      &kp K                                                  &kp J          &kp U      &kp R           &kp L    &kp SEMI   &kp GRAVE
-&kp MINUS      &kp A   &kp S   &kp E         &kp T      &kp G                                                  &kp Y          &kp N      &kp I           &kp O    &kp H      &kp APOS
-&kp DEL        &kp Z   &kp X   &kp C         &kp V      &kp B           &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp P          &kp M      &kp COMMA       &kp DOT  &kp SLASH  &kp EQUAL
-                               &mt LALT ESC  &kp LCTRL  &sk LEFT_SHIFT  &key_repeat         &kp SPACE          &kp BACKSPACE  &lt 1 TAB  &mt RGUI ENTER
+&kp PAGE_UP    &kp N1  &kp N2  &kp N3        &kp N4     &kp N5                                             &kp N6         &kp N7     &kp N8          &kp N9   &kp N0     &kp K_MUTE
+&kp PAGE_DOWN  &kp Q   &kp W   &kp D         &kp F      &kp K                                              &kp J          &kp U      &kp R           &kp L    &kp SEMI   &kp GRAVE
+&kp MINUS      &kp A   &kp S   &kp E         &kp T      &kp G                                              &kp Y          &kp N      &kp I           &kp O    &kp H      &kp APOS
+&kp DEL        &kp Z   &kp X   &kp C         &kp V      &kp B       &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp P          &kp M      &kp COMMA       &kp DOT  &kp SLASH  &kp EQUAL
+                               &mt LALT ESC  &kp LCTRL  &kp LSHIFT  &key_repeat         &kp SPACE          &kp BACKSPACE  &lt 1 TAB  &mt RGUI ENTER
             >;
         };
 
